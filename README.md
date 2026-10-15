@@ -30,17 +30,17 @@ corrective actions if necessary.
 4) Create a new column named “Weight Status” that categorizes BMI into different 
 categories as below:
 #### BMI                    Weight Status
-    Below 18.5            Underweight
-   18.5 – 24.9            Normal Weight 
-   25.0 – 29.9            Overweight
-   30.0 and Above         Obesity
+     Below 18.5   -         Underweight,
+    18.5 – 24.9   -         Normal Weight ,
+    25.0 – 29.9   -         Overweight,
+    30.0 and Above -        Obesity,
 
 5) Create a new column named “Diabetes Status” and fill it as per the information given 
 below:  
    #### HbA1C       Diabetes Status 
-    Below 5.7         Normal 
-    5.7 – 6.4         Prediabetes 
-   6.5 and Above      Diabetes
+    Below 5.7 -        Normal ,
+    5.7 – 6.4 -        Prediabetes ,
+   6.5 and Above-      Diabetes,
 
 6) Merge ‘year’, ‘month’ and ‘date’ columns in the “Hospitalization Details” Table into one 
 column named ‘Date of Birth’ and format it in ‘DD-MMM-YYYY’ custom format.  
