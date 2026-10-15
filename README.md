@@ -24,7 +24,7 @@ tier' columns, and fill in the missing values accordingly.
 <br>Calculate count of tier-1,tier-2,tier-3,Yes,No using COUNTIF().Apply greater count on missing values. Here Smoker column Missing value replaced with "No" value,'Hospital tier' and 'City missing column replaced with tier-2. 
 4) If any 'State ID' values are missing, consider filling them with 'Unknown' or using another 
 appropriate strategy.
-Home-->Find&Select-->Find-->?-->Replace-->Unknown-->Replace-->Close.
+<br>Home-->Find&Select-->Find-->?-->Replace-->Unknown-->Replace-->Close.
 ### Data Transformation:   
 1) Split the ‘names’ column in the “Customer Names” Table into 3 meaningful columns: 
 ‘Title’, ‘First Name’, and ‘Last Name’.
@@ -71,13 +71,16 @@ Customer ID as the common column, utilizing VLOOKUP.
 ➢ Retain the following necessary columns: Customer ID, First Name, BMI, HBA1C, Heart 
 Issues, Any Transplants, Cancer history, NumberOfMajorSurgeries, smoker, Weight 
 Status, Diabetes Status, Date of Birth, charges, Hospital tier, City tier, State ID, Age.
-<br>** By using this syntax  =VLOOKUP(lookup_value, table_array, col_index_num,
+
+<br>By using this syntax  =VLOOKUP(lookup_value, table_array, col_index_num,
 [range_lookup])  of VLOOKUP Specified column extracted and added to Healthcare sheet.
 Select cntrl+A-->select cntrl+T-->specify location-->select my table has headers -->Pivot Table generated.
+
 Create pivot tables if required to do the following analysis, then visualize through charts:  
 #### Analysis using Pie/Donut Chart:  
 ➢ What is the distribution of cancer history among smokers and non-smokers?  
 <br>Drag and drop Cancer History to raw column and smoker to value column-->change field value of smoker to count-->Pivot table generated.Select pivot table-->TableAnalyze-->PivotChart-->Select Pie chart-->OK.Analyze and add chart elements to you flavours. 
+
 ➢ How does the total number of major surgeries and average HbA1C differ between 
 patients with and without a history of transplants? 
 <br>create pivot table for total number of major surgeries with Transplants and average HbA1C by drag and drop .create pivot table only for total number of major surgeries and average HbA1C .Create 2 pie diagram by using this step: Select pivot table-->TableAnalyze-->PivotChart-->Select Pie chart-->OK.Analyze and add chart elements to you flavours. 
@@ -85,11 +88,13 @@ patients with and without a history of transplants?
 ➢ How do healthcare charges vary based on different weight statuses and diabetes 
 statuses?  
 <br>Drag and drop Diabetes status and Weight Status to raw column and  charges to value column-->change field value of smoker to Sum-->Pivot table generated.Select pivot table-->TableAnalyze-->Column/BarChart-->OK.Analyze and add chart elements to you flavours. 
+
 ➢ Can you compare the average charges for each hospital tier within different states?  
 <br>create pivot table for StateID with Hospital tier and average of charges by drag and drop .Create Column/Bar chart by using this step: Select pivot table-->TableAnalyze-->Column/BarChart-->OK.Analyze and add chart elements to you flavours. 
 #### Analysis using Line/Scatter Plot:  
 ➢ Is there any correlation between age and both BMI and HbA1C in the dataset?  
 <br>Create pivot table using Age,BMI,HBA1C column and create Line chart by using this pivot table. We found count of BMI and HBA1C are same based on Age.
+
 ➢ Explore the relationship between age and healthcare charges. 
 <br>Create pivot table using Age,charges column and create Line chart by using this Pivot table. We found No of Age Increases, the Healthcare charge decreases.
 ### Dashboard Creation:  
